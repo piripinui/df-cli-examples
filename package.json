@@ -1,0 +1,20 @@
+{
+  "name": "location-cli",
+  "version": "1.0.0",
+  "description": "An example client that stores and retrieves location data from the location storage service using the Digital Enterprise Information Model",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Phil Robinson",
+  "license": "ISC",
+  "dependencies": {
+    "command-line-args": "^5.1.1",
+    "command-line-usage": "^6.0.2",
+    "fs": "0.0.1-security",
+    "kafka-node": "^4.1.3",
+    "kafkajs": "^1.10.0",
+    "uuid": "^3.3.3"
+  }
+}
