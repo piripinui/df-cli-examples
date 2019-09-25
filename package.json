@@ -1,7 +1,7 @@
 {
-  "name": "location-cli",
+  "name": "df-cli-examples",
   "version": "1.0.0",
-  "description": "An example client that stores and retrieves location data from the location storage service using the Digital Enterprise Information Model",
+  "description": "Examples of creating and retreiving data using Digital Enterprise Information Model",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
