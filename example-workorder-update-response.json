@@ -1,0 +1,19 @@
+{
+  "event": {
+    "data": {
+      "children": [],
+      "assetWork": true,
+      "createdTimestamp": 1568974048082,
+      "description": "Another ' +\n    'one from the command ' +\n    'line",
+      "workOrderUUID": "8136b48d-13c0-48ab-a285-c2e5479f8d70",
+      "workOrderId": "667576",
+      "lastModifiedTimestamp": 1568975404273,
+      "status": "Potential",
+      "raisedDateTime": 1568975404007
+    },
+    "breadcrumbId": "58a622e1-6307-4739-a21c-a7c6c198c6f8",
+    "profile": "de.workorder.storage.completed.event-1.0.0.json",
+    "domain": "WORK_ORDERS",
+    "dataFabricId": "8136b48d-13c0-48ab-a285-c2e5479f8d70"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "event": {
+    "data": {
+      "workOrders": [
+        {
+          "event": {
+            "data": {
+              "children": [],
+              "description": "This is a work order from NodeJS",
+              "workOrderUUID": "8136b48d-13c0-48ab-a285-c2e5479f8d70",
+              "workOrderId": "123456",
+              "status": "Potential",
+              "assetWork": true,
+              "raisedDateTime": 12345
+            },
+            "breadcrumbId": "35e132f0-942a-4338-bbc6-04f3601c6637",
+            "profile": "de.workorder.event-1.0.0.json",
+            "domain": "WORK_ORDERS",
+            "dataFabricId": "8136b48d-13c0-48ab-a285-c2e5479f8d70"
+          }
+        }
+      ],
+      "locations": [
+        {
+          "event": {
+            "data": {
+              "entityUUID": "8136b48d-13c0-48ab-a285-c2e5479f8d70",
+              "entityType": "WorkOrder",
+              "location": {
+                "locationGIS": {
+                  "geometry": [
+                    {
+                      "x": 0.104785,
+                      "y": 52.252484
+                    }
+                  ],
+                  "type": "Point"
+                }
+              }
+            },
+            "breadcrumbId": "35e132f0-942a-4338-bbc6-04f3601c6637",
+            "profile": "de.location.event-1.0.0.json",
+            "domain": "LOCATIONS",
+            "dataFabricId": "8136b48d-13c0-48ab-a285-c2e5479f8d70"
+          }
+        }
+      ]
+    },
+    "breadcrumbId": "35e132f0-942a-4338-bbc6-04f3601c6637",
+    "profiles": [
+      "de.workorder.ingestion-1.0.0.json",
+      "de.location.ingestion-1.0.0.json"
+    ]
+  }
+}

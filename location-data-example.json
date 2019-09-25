@@ -1,0 +1,63 @@
+{
+  "event": {
+    "breadcrumbId": "123456",
+    "profiles": [
+      "de.location.ingestion-1.0.0.json"
+    ],
+    "data": {
+      "locations": {
+        "event": {
+          "breadcrumbId": "21837612378",
+          "dataFabricId": "329847239847",
+          "profile": "de.location.event-1.0.0.json",
+          "data": {
+          	"locationUUID": "locationDFUUID",
+          	"locationId": "DisplayId",
+          	"locationDescription": "LocationDescription",
+          	"locationGIS": {
+          		"type": "Point",
+          		"geometry": [
+          			{
+          				"x": 12.34,
+          				"y": 12.34
+          			}
+          		]
+          	},
+          	"locationAddress": {
+          		"country": "AU",
+          		"postcode": "4006",
+          		"state": "QLD",
+          		"city": "Fortitude Valley",
+          		"addressLine1": "Level 9/757 Ann St",
+          		"addressLine2": ""
+          	},
+          	"userDefinedLocations": [
+          		"ABB Enterprise Software",
+          		"Level 3",
+          		"Meeting Room 3.1"
+          	],
+          	"solutionAttributes": [
+          		{
+          			"group": "CORE",
+          			"attributes": [
+          				{
+          					"name": "Name1",
+          					"value": "StaysTheSame"
+          				},
+          				{
+          					"name": "Name2",
+          					"value": "ToBeUpdated"
+          				},
+          				{
+          					"name": "Name3",
+          					"value": "ToBeDeleted"
+          				}
+          			]
+          		}
+          	]
+          }
+        }
+      }
+    }
+  }
+}

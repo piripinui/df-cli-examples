@@ -1,0 +1,31 @@
+{
+  "locations": [
+    {
+      "locationUUID": "8c7db778-f4e5-45bc-a8db-543ad19e4fb0",
+      "locationId": "phil",
+      "locationDescription": "This is a new one by Phil done 16/09/19",
+      "solutionAttributes": [],
+      "customAttributes": [],
+      "locationAddress": {
+        "country": "UK",
+        "city": "Cambridge",
+        "addressLine1": "High Street",
+        "addressLine2": "Histon"
+      },
+      "locationGIS": {
+        "type": "Point",
+        "geometry": [
+          {
+            "x": 0.104785,
+            "y": 52.252484
+          }
+        ]
+      },
+      "userDefinedLocations": [],
+      "children": [],
+      "createdTimestamp": "Sep 16, 2019, 2:43:44 PM",
+      "lastModifiedTimestamp": "Sep 16, 2019, 2:43:44 PM"
+    }
+  ],
+  "locationUUID": "8c7db778-f4e5-45bc-a8db-543ad19e4fb0"
+}

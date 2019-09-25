@@ -1,0 +1,41 @@
+{
+  "event": {
+    "breadcrumbId": "breadcrumbId",
+    "profiles": [
+      "de.location.ingestion-1.0.0.json"
+    ],
+    "data": {
+      "locations": {
+        "event": {
+          "breadcrumbId": "breadcrumbId",
+					"dataFabricId": "DefectDFId",
+					"profile": "de.location.event-1.0.0.json",
+					"data": {
+            "entityType": "Defect",
+						"entityUUID": "90b52b40-15f2-4f7f-b276-f19daf11562d",
+						"location": {
+              "locationDescription": "This is a location representing a position in the UK!! Inserted using NodeJS!!!",
+              "locationGIS": {
+                "type": "Point",
+                "geometry": [
+                  {
+                    "x": 0.104785,
+                    "y": 52.252484
+                  }
+                ]
+              },
+              "locationId": "phil",
+              "locationUUID": "12345",
+              "locationAddress": {
+                "addressLine1": "High Street",
+                "addressLine2": "Histon",
+                "city": "Cambridge",
+                "country": "UK"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

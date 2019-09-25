@@ -1,0 +1,47 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "de.location.ingestion-1.0.0.json",
+	"description": "Ingestion of Location",
+	"type": "object",
+	"allOf": [
+		{
+			"$ref": "de.core.eventmulti-1.0.0.json"
+		},
+		{
+			"properties": {
+				"event": {
+					"type": "object",
+					"properties": {
+						"data": {
+							"oneOf": [
+								{
+									"properties": {
+										"locations": {
+											"type": "array",
+											"items": {
+												"$ref": "de.location.event-1.0.0.json"
+											}
+										}
+									}
+								},
+								{
+									"properties": {
+										"locations": {
+											"$ref": "de.location.event-1.0.0.json"
+										}
+									}
+								}
+							]
+						}
+					},
+					"required": [
+						"data"
+					]
+				}
+			},
+			"required": [
+				"event"
+			]
+		}
+	]
+}

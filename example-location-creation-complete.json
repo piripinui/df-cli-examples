@@ -1,0 +1,38 @@
+{
+  "event": {
+    "data": {
+      "entityUUID": "58fc4042-d884-11e9-87f8-cd7510ee08f0",
+      "entityType": "Defect",
+      "location": {
+        "locationUUID": "de1eb7f6-8ce6-49ff-91de-4cc3ac6f27b4",
+        "locationId": "phil",
+        "locationDescription": "This ' +\n    'is a location representing a position in the UK!! Inserted using ' +\n    'NodeJS!!!",
+        "locationGIS": {
+          "locationUUID": "de1eb7f6-8ce6-49ff-91de-4cc3ac6f27b4",
+          "geometry": [
+            {
+              "x": 0.104785,
+              "y": 52.252484
+            }
+          ],
+          "type": "Point"
+        },
+        "createdTimestamp": 1568639855493,
+        "solutionAttributes": [],
+        "locationAddress": {
+          "country": "UK",
+          "city": "Cambridge",
+          "locationUUID": "de1eb7f6-8ce6-49ff-91de-4cc3ac6f27b4",
+          "addressLine1": "High ' +\n    'Street",
+          "addressLine2": "Histon"
+        },
+        "lastModifiedTimestamp": 1568639855493,
+        "customAttributes": []
+      }
+    },
+    "breadcrumbId": "b3cd6fe6-c924-4a43-a3c7-9b9acc7f906a",
+    "profile": "de.location.ingestion.storage.complete.event-1.0.0.json",
+    "domain": "LOCATIONS",
+    "dataFabricId": "DefectDFId"
+  }
+}
