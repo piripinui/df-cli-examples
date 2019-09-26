@@ -14,16 +14,15 @@ const sections = [
     header: 'Options',
     optionList: [
       {
-        name: 'workorderId',
+        name: 'workorderUUID',
         alias: 'i',
-        typeLabel: '{underline id}',
+        typeLabel: '{underline uuid}',
         type: String,
-        description: 'A string representing the ID of the work order you wish to search for'
+        description: 'A string representing the UUID of the work order you wish to search for'
       },
       {
         name: 'all',
         alias: 'a',
-        typeLabel: '{underline id}',
         type: Boolean,
         description: 'Returns all work orders. Overrides any other query criteria.'
       },
@@ -94,7 +93,7 @@ function setupKafka() {
     return;
   }
 
-  if (!options.workorderId && !options.all) {
+  if (!options.workorderUUID && !options.all) {
     console.log("Error: Must specify either a work order id or all.");
     console.log(usage);
     return;
@@ -124,7 +123,7 @@ function setupKafka() {
           if (options.all) {
             console.log("Received response from " + topics['findResponseTopic'] + " to find all request.", JSON.stringify(results));
           }
-          if (results.id = options.workorderId) {
+          if (results.id = options.workorderUUID) {
             console.log("Received response from " + topics['findResponseTopic'] + " to find-by-id request.", JSON.stringify(results));
           }
         }
@@ -143,8 +142,8 @@ function sendFindRequest() {
   if (options.all) {
     sendMessage(findAllTemplate, 'findTopic');
   }
-  else if (options.workorderId) {
-    findIdTemplate.ids.push(options.workorderId.toString());
+  else if (options.workorderUUID) {
+    findIdTemplate.ids.push(options.workorderUUID.toString());
     sendMessage(findIdTemplate, 'findTopic');
   }
 }
